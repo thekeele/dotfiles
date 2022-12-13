@@ -1,0 +1,12 @@
+# ignore everything
+/*
+
+# but these files
+!/.gitignore
+!/.README
+
+# and config
+!/.config
+/.config/*
+!/.config/nvim/
+/.config/nvim/plugin/
