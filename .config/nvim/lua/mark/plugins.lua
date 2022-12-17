@@ -40,9 +40,6 @@ return packer.startup(function(use)
     -- packer can manage itself
     use "wbthomason/packer.nvim"
 
-    -- ability to format lua files with :call LuaFormat()
-    use "andrejlevkovitch/vim-lua-format"
-
     -- useful lua functions used ny lots of plugins
     use "nvim-lua/plenary.nvim"
 
@@ -80,6 +77,12 @@ return packer.startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = {{'nvim-lua/plenary.nvim'}}
     }
+
+    -- ability to format lua files with :call LuaFormat()
+    use "andrejlevkovitch/vim-lua-format"
+
+    -- Autopairs, integrates with both cmp and nvim-treesitter
+    use "windwp/nvim-autopairs"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
