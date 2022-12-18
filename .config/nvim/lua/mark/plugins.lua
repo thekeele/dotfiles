@@ -84,6 +84,12 @@ return packer.startup(function(use)
     -- Autopairs, integrates with both cmp and nvim-treesitter
     use "windwp/nvim-autopairs"
 
+    -- display git decorations, diffs, blame line
+    use {
+        'lewis6991/gitsigns.nvim'
+        -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+    }
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then require("packer").sync() end
