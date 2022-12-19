@@ -1,11 +1,12 @@
-require "mark.options"
-require "mark.keymaps"
-require "mark.plugins"
-require "mark.colorscheme"
-require "mark.treesitter"
-require "mark.cmp"
-require "mark.lsp"
-require "mark.autopairs"
-require "mark.gitsigns"
-require "mark.comment"
-require "mark.bufferline"
+require("mark.options")
+require("mark.keymaps")
+require("mark.plugins")
+require("mark.colorscheme")
+require("mark.treesitter")
+require("mark.cmp")
+require("mark.lsp")
+require("mark.null_ls")
+require("mark.autopairs")
+require("mark.gitsigns")
+require("mark.comment")
+require("mark.bufferline")
