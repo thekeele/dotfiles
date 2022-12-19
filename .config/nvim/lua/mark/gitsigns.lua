@@ -18,11 +18,11 @@ gitsigns.setup {
     current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
     current_line_blame_opts = {
         virt_text = true,
-        virt_text_pos = "right_align", -- 'eol' | 'overlay' | 'right_align'
-        delay = 1000,
+        virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+        delay = 3000,
         ignore_whitespace = false
     },
-    current_line_blame_formatter = '┃<abbrev_sha> * <committer> (<committer_time:%R>) * <summary>',
+    current_line_blame_formatter = '┃<author> (<author_time:%R>) * <summary> (<abbrev_sha>)',
     sign_priority = 6,
     update_debounce = 100,
     status_formatter = nil, -- Use default
