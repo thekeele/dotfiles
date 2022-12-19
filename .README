@@ -6,8 +6,14 @@
 
 ```bash
   brew install cmake
-	brew install luarocks
 	brew install ripgrep
+```
+#
+#### install rust for lua formatting
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo --version
+cargo install stylua
 ```
 
 ### install
