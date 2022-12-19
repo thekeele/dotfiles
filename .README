@@ -1,0 +1,25 @@
+# dotfiles
+
+## .config/nvim
+
+### deps
+
+```bash
+  brew install cmake
+	brew install luarocks
+	brew install ripgrep
+```
+
+### install
+```bash
+	brew install neovim
+```
+
+### nerd fonts (dev icons)
+```bash
+  brew tap homebrew/cask-fonts
+  brew install font-mononoki-nerd-font
+```
+
+### open (and restart) nvim to start plugin install automatically
+
