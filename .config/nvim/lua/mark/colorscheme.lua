@@ -3,4 +3,4 @@ vim.opt.termguicolors = true
 
 -- set colorscheme
 vim.g.material_style = "palenight"
-vim.cmd "colorscheme material"
+vim.cmd("colorscheme material")

@@ -34,4 +34,3 @@ vim.opt.mouse = "a"
 
 -- speed go fast
 vim.opt.updatetime = 50
-
