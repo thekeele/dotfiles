@@ -49,34 +49,33 @@ return packer.startup(function(use)
     -- material colorscheme
     use "marko-cerovac/material.nvim"
 
-    -- treesitter
+    -- treesitter AST syntax highlighting
     use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
 
-    -- code completions
-    use "hrsh7th/nvim-cmp" -- The completion plugin
-    use "hrsh7th/cmp-buffer" -- buffer completions
-    use "hrsh7th/cmp-nvim-lsp" -- lsp completions
-    use "hrsh7th/cmp-nvim-lua" -- lua (config) lsp completions
-    -- use "hrsh7th/cmp-path" -- path completions
-    -- use "hrsh7th/cmp-cmdline" -- cmdline completions
-    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+	use {
+  'VonHeikemen/lsp-zero.nvim',
+  requires = {
+    -- LSP Support
+    {'neovim/nvim-lspconfig'},
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
 
-    -- snippets
-    use "L3MON4D3/LuaSnip" -- snippet engine
-    use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-buffer'}, -- provides suggestions based on the current file
+    {'hrsh7th/cmp-path'}, -- gives completions based on the filesystem
+    {'saadparwaiz1/cmp_luasnip'}, -- it shows snippets in the suggestions
+    {'hrsh7th/cmp-nvim-lsp'}, -- show data send by the language server
+    {'hrsh7th/cmp-nvim-lua'}, -- provides completions based on neovim's lua api 
 
-    -- language server
-    use "neovim/nvim-lspconfig" -- configurations for nvim LSP
-    use "williamboman/mason.nvim" -- language server installer
-    use "williamboman/mason-lspconfig.nvim" -- language server installer
-
+    -- Snippets
+    {'L3MON4D3/LuaSnip'}, -- snippet engine
+    {'rafamadriz/friendly-snippets'}, -- provides the snippets
+  }
+}			
+				
     -- telescope (fuzzy finder)
-    use {
-        'nvim-telescope/telescope.nvim',
-        tag = '0.1.0',
-        -- or                            , branch = '0.1.x',
-        requires = {{'nvim-lua/plenary.nvim'}}
-    }
+    use {'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = {{'nvim-lua/plenary.nvim'}}}
 
     -- ability to format lua files with :call LuaFormat()
     use "andrejlevkovitch/vim-lua-format"
@@ -85,10 +84,7 @@ return packer.startup(function(use)
     use "windwp/nvim-autopairs"
 
     -- display git decorations, diffs, blame line
-    use {
-        'lewis6991/gitsigns.nvim'
-        -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
-    }
+    use {'lewis6991/gitsigns.nvim'}
 								
     -- plugin to easily comment lines and blocks
     use {'numToStr/Comment.nvim'}
