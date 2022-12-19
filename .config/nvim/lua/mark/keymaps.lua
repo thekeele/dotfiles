@@ -1,10 +1,12 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
 
 --Remap space as leader key
-vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- vim.api.nvim_set_keymap("", "<Space>", "<Nop>", opts)
+-- vim.g.maplocalleader = " "
+
+-- project viewer keymaps
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- telescope keymaps
 local builtin = require('telescope.builtin')
