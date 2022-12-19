@@ -93,6 +93,9 @@ return packer.startup(function(use)
     -- plugin to easily comment lines and blocks
     use {'numToStr/Comment.nvim'}
 
+    -- adds "tabs" or a bufferline to easily switch between buffers / files
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then require("packer").sync() end
