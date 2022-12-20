@@ -6,7 +6,7 @@
 
 ```bash
   brew install cmake
-	brew install ripgrep
+  brew install ripgrep
 ```
 
 #### install rust for lua formatting
@@ -18,7 +18,7 @@
 
 ### install
 ```bash
-	brew install neovim
+  brew install neovim
 ```
 
 ### nerd fonts (dev icons)

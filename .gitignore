@@ -3,7 +3,7 @@
 
 # but these files
 !/.gitignore
-!/.README
+!/README
 
 # and config
 !/.config
