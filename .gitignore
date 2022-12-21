@@ -8,5 +8,11 @@
 # and config
 !/.config
 /.config/*
+
+# nvim config
 !/.config/nvim/
 /.config/nvim/plugin/
+
+# iterm2 config
+!/.config/iterm2/
+/.config/iterm2/AppSupport
