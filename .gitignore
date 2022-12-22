@@ -3,11 +3,12 @@
 
 # but these files
 !/.gitignore
-!/README.md
+!/.zshenv
 
 # and config
 !/.config
 /.config/*
+!/.config/README.md
 
 # nvim config
 !/.config/nvim/
@@ -16,3 +17,8 @@
 # iterm2 config
 !/.config/iterm2/
 /.config/iterm2/AppSupport
+
+# zsh config and prompt
+!/.config/zsh/
+!/.config/sheldon/
+

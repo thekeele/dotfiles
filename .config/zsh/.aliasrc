@@ -1,0 +1,27 @@
+# nav aliases
+alias ls='gls -F --color --group-directories-first'
+alias lls='gls -laohF --color --group-directories-first'
+alias c='clear'
+
+# git aliases
+alias gs="git status"
+alias gl="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
+alias gll="git log --stat --color"
+
+alias gr="git remote -v"
+alias gf="git fetch --all --prune --tags"
+alias gsw="git switch"
+alias gb="git branch -a"
+alias gbd="git branch -D"
+alias gpull="git pull"
+alias gpush="git push"
+
+alias gd='git diff'
+alias ga='git add'
+alias grm='git rm'
+alias gc='git commit -m'
+alias gco='git checkout'
+
+alias gfix="git commit --fixup"
+alias grb="git rebase -i --autosquash"
+alias gplz="git push --force-with-lease"
