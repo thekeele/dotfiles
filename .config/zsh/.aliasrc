@@ -19,9 +19,9 @@ alias gpush="git push"
 alias gd='git diff'
 alias ga='git add'
 alias grm='git rm'
-alias gc='git commit -m'
+alias gc='git commit -S -m'
 alias gco='git checkout'
 
-alias gfix="git commit --fixup"
+alias gfix="git commit -S --fixup"
 alias grb="git rebase -i --autosquash"
 alias gplz="git push --force-with-lease"
