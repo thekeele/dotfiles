@@ -22,3 +22,6 @@
 !/.config/zsh/
 !/.config/sheldon/
 
+# git config
+!/.config/git/
+

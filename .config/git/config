@@ -1,0 +1,16 @@
+[user]
+  name = Mark Keele
+  email = mark@keele.codes
+  signingkey = ~/.ssh/git_key.pub
+
+[gpg]
+  format = ssh
+
+[core]
+  editor = nvim
+
+[merge]
+  tool = nvimdiff
+
+[color]
+  ui = auto
