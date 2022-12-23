@@ -1,6 +1,3 @@
-# disable history file
-LESSHISTFILE=-
-
 # set location for rust cargo 
 . "$HOME/.cargo/env"
 

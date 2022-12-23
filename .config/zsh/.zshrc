@@ -8,6 +8,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
+# don't save less history
+export LESSHISTFILE=-
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
