@@ -11,6 +11,11 @@ HISTFILE=~/.cache/zsh/history
 # don't save less history
 export LESSHISTFILE=-
 
+# erlang build options
+export KERL_BUILD_DOCS=yes
+export KERL_DOC_TARGETS="chunks"
+export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --without-odbc --with-ssl=$(brew --prefix openssl@1.1)"
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
@@ -21,3 +26,6 @@ _comp_options+=(globdots)		# Include hidden files.
 # Load aliases and powerline prompt 
 [[ ! -f ~/.config/zsh/.aliasrc ]] || source ~/.config/zsh/.aliasrc
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# load asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
