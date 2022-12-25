@@ -4,16 +4,6 @@
 <dict>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>Default Bookmark Guid</key>
 	<string>AED18D0A-1F2F-46AF-BE19-5B82B77D9085</string>
 	<key>DimInactiveSplitPanes</key>
@@ -135,6 +125,10 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_AED18D0A-1F2F-46AF-BE19-5B82B77D9085</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_AED18D0A-1F2F-46AF-BE19-5B82B77D9085_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -656,7 +650,7 @@
 				</dict>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -1294,9 +1288,9 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Mouse Reporting allow clicks and drags</key>
-			<false/>
+			<true/>
 			<key>Mouse Reporting allow mouse wheel</key>
-			<false/>
+			<true/>
 			<key>Name</key>
 			<string>mark</string>
 			<key>Non Ascii Font</key>
