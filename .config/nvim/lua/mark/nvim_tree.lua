@@ -1,7 +1,7 @@
 require("nvim-tree").setup({
   disable_netrw = true,
   hijack_netrw = true,
-  open_on_setup = false,
+  open_on_setup = true,
   open_on_setup_file = false,
   actions = {
     open_file = {
@@ -18,7 +18,7 @@ require("nvim-tree").setup({
     preserve_window_proportions = false,
     width = "20%",
     float = {
-      enable = true,
+      enable = false,
       quit_on_focus_loss = true,
     },
   },
