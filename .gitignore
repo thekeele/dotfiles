@@ -2,6 +2,7 @@
 /*
 
 # but these files
+!/.gitignore
 !/.tool-versions
 !/.zshenv
 
