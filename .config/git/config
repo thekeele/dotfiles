@@ -14,3 +14,6 @@
 
 [color]
   ui = auto
+
+[init]
+	defaultBranch = master
