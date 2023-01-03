@@ -1,7 +1,7 @@
 [user]
   name = Mark Keele
   email = mark@keele.codes
-  signingkey = ~/.ssh/git_key.pub
+  signingkey = ~/.ssh/git_signing_key.pub
 
 [gpg]
   format = ssh
@@ -17,3 +17,9 @@
 
 [init]
 	defaultBranch = master
+
+[includeIf "gitdir:~/gridpoint/phoenix/"]
+				path = ~/.gitconfig-gridpoint
+
+[includeIf "gitdir:~/gridpoint/site_sim/"]
+				path = ~/.gitconfig-gridpoint
