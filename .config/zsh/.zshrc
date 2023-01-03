@@ -13,6 +13,8 @@ export LESSHISTFILE=-
 
 # erlang build options
 export KERL_BUILD_DOCS=yes
+export KERL_INSTALL_HTMLDOCS=no
+export KERL_INSTALL_MANPAGES=no
 export KERL_DOC_TARGETS="chunks"
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac --without-odbc --with-ssl=$(brew --prefix openssl@1.1)"
 
