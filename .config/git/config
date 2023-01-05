@@ -12,6 +12,9 @@
 [merge]
   tool = nvimdiff
 
+[pull]
+  rebase = true
+
 [color]
   ui = auto
 
