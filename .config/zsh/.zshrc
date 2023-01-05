@@ -31,3 +31,6 @@ _comp_options+=(globdots)		# Include hidden files.
 
 # load asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# load direnv
+eval "$(direnv hook zsh)"
