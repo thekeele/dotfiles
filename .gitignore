@@ -1,28 +1,27 @@
 # ignore everything
-/*
+*
 
-# but these files
-!/.gitignore
-!/.tool-versions
-!/.zshenv
+# but these home files
+!.gitignore
+!.tool-versions
+!.zshenv
 
-# and config
-!/.config
-/.config/*
-!/.config/README.md
+# and config folders
+!.config/
+!.config/README.md
 
 # nvim config
-!/.config/nvim/
-/.config/nvim/plugin/
+!.config/nvim/
+.config/nvim/plugin/
 
 # iterm2 config
-!/.config/iterm2/
-/.config/iterm2/AppSupport
+!.config/iterm2/
+.config/iterm2/AppSupport
 
 # zsh config and plugin manager
-!/.config/zsh/
-!/.config/sheldon/
+!.config/zsh/
+!.config/sheldon/
 
 # git config
-!/.config/git/
+!.config/git/
 
